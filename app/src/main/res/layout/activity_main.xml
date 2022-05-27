@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llmainActivity"
+    tools:context=".view.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+         android:text="@string/app_name"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+
+        >
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:hint="@string/search"
+            android:textSize="14dp"
+            android:drawableEnd="@drawable/search"
+            tools:ignore="NestedWeights" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="10dp"
+             android:src="@drawable/search"
+            app:tint="@color/black"
+              />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivSort"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/sort_a"/>
+
+</LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"/>
+<LinearLayout
+    android:id="@+id/llProgressStatus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivStatus"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/download_ic" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:progressDrawable="@drawable/ic_launcher_foreground"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/tvStatusDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_wait_while_the_download_is_in_progress"
+        android:layout_gravity="center"
+        android:textColor="#8F8F8F"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+         />
+</LinearLayout>
+
+</LinearLayout>

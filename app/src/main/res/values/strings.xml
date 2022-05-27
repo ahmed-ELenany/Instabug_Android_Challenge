@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Challenge</string>
+    <string name="please_wait_while_the_download_is_in_progress">Please wait while the download is in progress</string>
+    <string name="try_again">Try again</string>
+    <string name="internetConnectionError">Internet connection fail,check internet!</string>
+    <string name="search">Search</string>
+</resources>
