@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
             getData();
         }else{
             reload=true;
-           // setRecyclerView();
+            setRecyclerView();
         }
 
     }
